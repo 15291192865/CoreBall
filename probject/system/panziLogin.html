@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<title>盘子女人坊-管理员登录界面</title>
+		<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/panziLoginStyle.css"/>
+		<link rel="stylesheet" type="text/css" href="../web/css/panziStyle.css"/>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<nav id="navbar-example" class="navbar navbar-default" role="navigation">
+				<div class="container-fluid ">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+						    <span class="sr-only">切换导航</span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						</button>
+						<!-- 登录注册 -->
+						<div class="attr-nav navRig">
+							<ul>
+								<!--<li class="navLogin">
+									<img src="../source/images/login.png" />
+									<a href="http://127.0.0.1:8020/XAH171003/probject/web/panzilogin.html?__hbt=1514344432069"><span>登录</span></a>
+									<span>|</span>
+									<a href="http://127.0.0.1:8020/XAH171003/probject/web/panzilogon.html?__hbt=1514354720385"><span>注册</span></a>
+								</li>-->
+								<!-- 隐藏的微信、地图、分享 -->
+								<!--<li class="dropdown navDrop hidden-xs hidden-sm">
+									<a href="" class="dropdown-toggle" data-toggle="dropdown">
+										<span class="navShare">
+                								<i></i>
+                								<i></i>
+                								<i></i>
+                							</span>
+									</a>
+									<ul class="dropdown-menu dropMenu">
+										<li>
+											<a href="#"><img src="../source/images/shareIco1.png" /></a>
+										</li>
+										<li>
+											<a href="#"><img src="../source/images/shareIco2.png" /></a>
+										</li>
+										<li>
+											<a href="#"><img src="../source/images/shareIco3.png" /></a>
+										</li>
+										<li>
+											<a href="#"><img src="../source/images/shareIco4.png" /></a>
+										</li>
+										<li>
+											<a href="#"><img src="../source/images/shareIco5.png" /></a>
+										</li>
+									</ul>
+								</li>-->
+							</ul>
+						</div>
+						<!-- logo -->
+						<div class="logo">
+							<a class="navbar-brand" href="#">
+								<img src="../source/images/logo.png" />
+							</a>
+							<div class="dropdown">
+								<a href="#" class="navbar-img navbar-brand dropdown-toggle" data-toggle="dropdown">
+									<img src="../source/images/logoBtn.png" />
+								</a>
+								<ul class="dropdown-menu logoMenu">
+									<li>
+										<a href="#">凤绫儿</a>
+									</li>
+									<li>
+										<a href="#">盘小宝</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 文字导航 -->
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#hot">
+									<span class="navIco">
+										<img src="../source/images/navIco1.png"/>
+									</span>
+									<span class="navTxt">热拍主题</span>
+								</a>
+							</li>
+							<li>
+								<a href="#beaut">
+									<span class="navIco">
+										<img src="../source/images/navIco2.png"/>
+									</span>
+									<span class="navTxt">最美客片</span>
+								</a>
+							</li>
+							<li>
+								<a href="#feature">
+									<span class="navIco">
+										<img src="../source/images/navIco3.png"/>
+									</span>
+									<span class="navTxt">特色专题</span>
+								</a>
+							</li>
+							<li>
+								<a href="#brand">
+									<span class="navIco">
+										<img src="../source/images/navIco4.png"/>
+									</span>
+									<span class="navTxt">品牌中心</span>
+								</a>
+							</li>
+							<li>
+								<a href="#comment" style="background: none;">
+									<span class="navIco">
+										<img src="../source/images/navIco5.png"/>
+									</span>
+									<span class="navTxt">客户评论</span>
+								</a>
+							</li>
+							<li>
+								<a href="#message">
+									<span class="navIco">
+										<img src="../source/images/navIco6.png"/>
+									</span>
+									<span class="navTxt">资讯动态</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="navIco">
+										<img src="../source/images/navIco7.png"/>
+									</span>
+									<span class="navTxt">全国各店</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="navIco">
+										<img src="../source/images/navIco8.png"/>
+									</span>
+									<span class="navTxt">盘子招聘</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="wrap">
+				<div class="content">
+					<h3>管理员登录</h3>
+					<div></div>
+					<div class="userName">
+						用户名：<input type="text" placeholder="手机号/qq号/邮箱" />
+						<p class="userHint">请输入正确的用户名</p>
+					</div>
+					<div class="pawd">
+						密码：<input type="password" placeholder="请输入6-18位的数字、字母" />
+						<p class="pawdHint">请输入正确的密码</p>
+					</div>
+					<div class="hint">
+						<span><input type="checkbox" />下次自己登录</span>
+						<a href="">忘记密码?</a>
+					</div>
+					<button class="btn btn-primary">登录</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../public/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../public/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/panziLoginStyle.js" type="text/javascript" charset="utf-8"></script>
+</html>

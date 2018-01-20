@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<title>盘子女人坊-主界面</title>
+		<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../public/Swiper/css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/panziStyle.css" />
+	</head>
+
+	<body>
+		<!-- 导航栏 -->
+		<div class="container-fluid">
+			<nav id="navbar-example" class="navbar navbar-default" role="navigation">
+				<div class="container-fluid ">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+					            <span class="sr-only">切换导航</span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					        </button>
+						<!-- 登录注册 -->
+						<div class="attr-nav navRig">
+							<ul>
+								<li class="navLogin">
+									<img src="../source/images/login.png" />
+									<a href="../web/panzilogin.html"><span>登录</span></a>
+									<span>|</span>
+									<a href="../web/panzilogon.html"><span>注册</span></a>
+								</li>
+								<!-- 隐藏的微信、地图、分享 -->
+								<li class="dropdown navDrop hidden-xs hidden-sm">
+									<a href="" class="dropdown-toggle" data-toggle="dropdown">
+										<span class="navShare">
+                								<i></i>
+                								<i></i>
+                								<i></i>
+                							</span>
+									</a>
+									<ul class="dropdown-menu dropMenu">
+										<li>
+											<a href="#"><img src="../source/images/shareIco1.png" /></a>
+										</li>
+										<li>
+											<a href="#"><img src="../source/images/shareIco2.png" /></a>
+										</li>
+										<li>
+											<a href="#"><img src="../source/images/shareIco3.png" /></a>
+										</li>
+										<li>
+											<a href="#"><img src="../source/images/shareIco4.png" /></a>
+										</li>
+										<li>
+											<a href="#"><img src="../source/images/shareIco5.png" /></a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<!-- logo -->
+						<div class="logo">
+							<a class="navbar-brand" href="#">
+								<div class="logoimg"></div>
+							</a>
+							<div class="dropdown">
+								<a href="#" class="navbar-img navbar-brand dropdown-toggle" data-toggle="dropdown">
+									<img src="../source/images/logoBtn.png" />
+								</a>
+								<ul class="dropdown-menu logoMenu">
+									<li>
+										<a href="#">凤绫儿</a>
+									</li>
+									<li>
+										<a href="#">盘小宝</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 文字导航 -->
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#hot">
+									<span class="navIco">
+										<img src="../source/images/navIco1.png"/>
+									</span>
+									<span class="navTxt">热拍主题</span>
+								</a>
+							</li>
+							<li>
+								<a href="#beaut">
+									<span class="navIco">
+										<img src="../source/images/navIco2.png"/>
+									</span>
+									<span class="navTxt">最美客片</span>
+								</a>
+							</li>
+							<li>
+								<a href="#feature">
+									<span class="navIco">
+										<img src="../source/images/navIco3.png"/>
+									</span>
+									<span class="navTxt">特色专题</span>
+								</a>
+							</li>
+							<li>
+								<a href="#brand">
+									<span class="navIco">
+										<img src="../source/images/navIco4.png"/>
+									</span>
+									<span class="navTxt">品牌中心</span>
+								</a>
+							</li>
+							<li>
+								<a href="#comment" style="background: none;">
+									<span class="navIco">
+										<img src="../source/images/navIco5.png"/>
+									</span>
+									<span class="navTxt">客户评论</span>
+								</a>
+							</li>
+							<li>
+								<a href="#message">
+									<span class="navIco">
+										<img src="../source/images/navIco6.png"/>
+									</span>
+									<span class="navTxt">资讯动态</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="navIco">
+										<img src="../source/images/navIco7.png"/>
+									</span>
+									<span class="navTxt">全国各店</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="navIco">
+										<img src="../source/images/navIco8.png"/>
+									</span>
+									<span class="navTxt">盘子招聘</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- 内容部分 -->
+		<div class="fullWrap fullpage-wrapper" data-spy="scroll" data-target="#navbar-example" data-offset="0">
+			<!-- 轮播图 -->
+			<div class="swiper-container contWrap">
+				<div class="swiper-wrapper">
+					<!--<div class="swiper-slide" data-swiper-autoplay="2000">
+						<img src="../source/images/3132900161aef9d9bc590ef9a031b655.jpg" />
+					</div>
+					<div class="swiper-slide" data-swiper-autoplay="2000">
+						<img src="../source/images/f9dbfd96ca08c8525f487d808343011f.jpg" />
+					</div>
+					<div class="swiper-slide" data-swiper-autoplay="2000">
+						<img src="../source/images/7f08caf27b26d1defe4e392cdcdd8562.jpg" />
+					</div>-->
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<!-- 热拍主题 -->
+			<div class="wrap1 contWrap row" id="hot">
+				<!--<div class="wrapList col-sm-12 col-md-12 col-lg-6">
+					<div class="list">
+						<img src="../source/images/c30145f2a225dd8b47847a4267cc77c5.jpg" />
+						<div class="box1Text">
+							<div class="box1Ico"></div>
+							<div class="box1Tex textRight">
+								<h2 class="box1TitCn">漱玉图集</h2>
+								<h3 class="box1TitEn">LADY ATLAS</h3>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<!--<div class="wrapList col-sm-12 col-md-6 col-lg-3">
+					<div class="list">
+						<img src="../source/images/16c2d7a90c5fdd2220bfb1ee508f6099.jpg" />
+					</div>
+				</div>-->
+				<!--<div class="wrapList col-sm-12 col-md-6 col-lg-3">
+					<div class="list">
+						<img src="../source/images/85c6e9918d25d090cd71110f37d3c0f1.jpg" />
+					</div>
+				</div>-->
+			</div>
+			<!-- 最美客片 -->
+			<div class="wrap2 contWrap row" id="beaut">
+				<div class="container-fluid">
+					<div class="container-fluid wrap2_row">
+						<!-- 1 -->
+						<!--<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/014140f7f5ac986d585ca2b34cd7832b.jpg" />
+							</div>
+						</div>-->
+						<!-- 2 -->
+						<!--<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/cab8cf77695078ff94bc30c7bae7fa6f.jpg" />
+							</div>
+						</div>-->
+						<!-- 3 -->
+						<!--<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/d84714ddc6bbf99d43d573cb6f1027c9.jpg" />
+							</div>
+						</div>-->
+						<!-- 4 -->
+						<!--<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/571e6ed11c2df43b38861b1363dccc08.jpg" />
+							</div>
+						</div>-->
+						<!-- 5 -->
+						<!--<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/531c649be98961e64d93b36c01181d0e.jpg" />
+							</div>
+						</div>-->
+						<!-- 6 -->
+						<!--<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/cba3b71849c6cb6dc3a336b4a07546bf.jpg" />
+							</div>
+						</div>-->
+						<!-- 7 -->
+						<!--<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/f2d932a4842408c5c1afb32247827f51.jpg" />
+							</div>
+						</div>-->
+						<!-- 8 -->
+						<!--<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/e5a379f3dcc413a997ae7745e2e58920.jpg" />
+							</div>
+						</div>-->
+					</div>
+				</div>
+			</div>
+			<!-- 特色专题 -->
+			<div class="wrap3 contWrap row" id="feature">
+				<div class="container-fluid">
+					<div class="container-fluid wrap3_row">
+						<!--<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/0f90bc92a6956c0ad5bdf76099197d68.jpg" />
+								<div></div>
+								<p>特色专题(新品主题)</p>
+							</div>
+						</div>
+						<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/a05a6c941141f50191383c532d523c10.jpg" />
+								<div></div>
+								<p>特色专题(外景主题)</p>
+							</div>
+						</div>
+						<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/85e2ef672d9085d92aa5bfbf71b0ba8c.jpg" />
+								<div></div>
+								<p>特色专题(闺蜜主题)</p>
+							</div>
+						</div>
+						<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/4cda7a422057c60de17904cadf17587b.jpg" />
+								<div></div>
+								<p>特色专题(情侣主题)</p>
+							</div>
+						</div>-->
+					</div>
+				</div>
+			</div>
+			<!-- 品牌中心 -->
+			<div class="wrap4 contWrap row" id="brand">
+				<div class="container-fluid">
+					<div class="container-fluid wrap4_row">
+						<!--<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/c7cbf4c2974f403c6f708af71ac3df2f.jpg" />
+								<div></div>
+								<p>集团品牌介绍</p>
+							</div>
+						</div>
+						<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/2086ddc443b313e178463241aa8b3235.jpg" />
+								<div></div>
+								<p>集团技术团队</p>
+							</div>
+						</div>
+						<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/ba6874972eddb0ac75554e5dde9e5a41.jpg" />
+								<div></div>
+								<p>集团电商团队</p>
+							</div>
+						</div>
+						<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<img src="../source/images/9bc5db393ab01a1927dffc2516ea43f8.jpg" />
+								<div></div>
+							<p>集团后期工程</p>
+						</div>-->
+					</div>
+				</div>
+			</div>
+			<!-- 客户评论 -->
+			<div class="wrap5 contWrap row" id="comment">
+				<div class="container-fluid">
+					<div class="container-fluid wrap5_row">
+						<!--<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<p>成片已出[哈哈]开心到爆炸[二哈]@盘子女人坊摄影沈阳店</p>
+								<div>
+									<img src="../source/images/2b2949051b16ca5f9f9174282add8857.jpg" />
+								</div>
+								<h3>鎏家大岳岳</h3>
+							</div>
+						</div>
+						<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<p>@化妆师卢蓉 @盘子女人坊摄影 @古风摄影师任兴旺 [并不简单]谁还不是小仙女啊，感谢盘子女人坊，感谢逗中带点萌萌哒的化妆师卢蓉, 温柔摄影师任兴旺，对，就是温柔[笑cry][笑cry]娘娘贵妃小主格格戏曲主题，想怎么拍就怎么拍，你值得拥有[小黄人剪刀手]​</p>
+								<div>
+									<img src="../source/images/b81cf077f4cda7ceaf2b1e8401899cd1.jpg" />
+								</div>
+								<h3>Cheeseyeah</h3>
+							</div>
+						</div>
+						<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<p>盘子，我终于可以发出来了@盘子女人坊摄影 ​​​​ ​</p>
+								<div>
+									<img src="../source/images/c43fd3a6b2acccd8f7390d3a809f82c9.jpg" />
+								</div>
+								<h3>云茜ccc</h3>
+							</div>
+						</div>
+						<div class="wrapList col-xs-6 col-sm-6 col-md-3">
+							<div class="list">
+								<p>@期待好久的古装拍摄 今天终于等到了 早晨6点多就和 妹妹起床出发来到了 盘子女人坊 一进盘子女人坊被大厅的高端大气上档次深深吸引了 心情瞬间美丽起来 进来遇见一位美丽的礼服师 很会搭配 很满意 对了还有非常帅的化妆师 简直男神 非常满意的一次拍摄 @盘子女人坊摄影 @化妆师孟阳 @摄影师戴海波 ​​​​</p>
+								<div>
+									<img src="../source/images/b1f820302cb5464a4d959c6fb580b9fc.jpg" />
+								</div>
+								<h3>梁淞婷</h3>
+							</div>
+						</div>-->
+					</div>
+				</div>
+			</div>
+			<!-- 资讯动态 -->
+			<div class="wrap6 contWrap row" id="message">
+				<div class="container-fluid">
+					<div class="container-fluid wrap6_row">
+						<div class="listLeft col-xs-12 col-sm-12 col-lg-6">
+							<div class="titleTop">
+								<h4 class="ou titleChange" data-class="titleHot">热门新闻</h4>
+								<span>|</span>
+								<h4 class="ou" data-class="titleBrand">品牌资讯</h4>
+								<span>|</span>
+								<h4 class="ou" data-class="titleNews">最新活动</h4>
+							</div>
+							<div class="titleBottom">
+								<ul id="titleHot">
+									<!-- 1 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">25/12</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">福利 | 2018集团年会重磅神秘大礼，将属于陪伴我们十五载的盘粉。</h3>
+											<p class="titleBrief">十四载风云巨变，盘子女人坊。已由一间小小的摄影工作室，发展成一家拥有北京、上海等40余家直营旗舰店，布局全国千百城的文化产业集团</p>
+										</div>
+									</li>-->
+									<!-- 2 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">12/12</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">加盟商“移花接木”被罚23万，盘子女人坊打赢“知识产权保卫战”。</h3>
+											<p class="titleBrief"> 近日《长沙晚报》发布了一则《加盟商“移花接木”被罚23万》的新闻，报道称“驳回被申请人的全部反请求，加盟商吴恒须赔偿湖南盘子女人坊文化科技有限公司利益损失共计232322元……”，引发社会各界的持续关注。</p>
+										</div>
+									</li>-->
+									<!-- 3 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">11/12</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">12·12秒杀倒计时 | 你和超低套系的距离，只差最后60分钟！</h3>
+											<p class="titleBrief"> 致我们狂欢不止的12·12，超低套系，限量好礼，等你秒杀、秒杀、秒杀</p>
+										</div>
+									</li>-->
+									<!-- 4 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">09/11</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">万千宠爱于一身，《惹红尘》主题周边首次限量发行。</h3>
+											<p class="titleBrief"> 欣赏完昨日发布的新品，《贤后赋》和《雾透纱》后，大家是不是还有些意犹未尽，盘子女人坊每年都会研发一批</p>
+										</div>
+									</li>-->
+									<!-- 5 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">18/10</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">势如破竹，盘子女人坊再掀维权打假风暴。</h3>
+											<p class="titleBrief"> 近一年来，盘子女人坊集团法律团队通过深入调查、取证，在全国范围内进行了商标、摄影主题维权，前后共立案大小数十起，起诉金额达数百万元，至今无一败诉，势如破竹，现已结案的，涉案人员就支付了一百多万元赔偿款。</p>
+										</div>
+									</li>-->
+									<!-- 6 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">18/10</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">关于“广州市海珠区乐峰广场盘子女人坊加盟店”声明</h3>
+											<p class="titleBrief"> 亲爱的消费者朋友、盘子女人坊合作伙伴、盘子女人坊体系员工：  一、位于广州市海珠区都会路2号乐峰广场的盘子女人坊古装摄影加盟店</p>
+										</div>
+									</li>-->
+								</ul>
+								<ul id="titleBrand">
+									<!-- 1 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">25/12</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">古装旅拍模特征集大赛完美落幕，报名的美人们看这里！</h3>
+											<p class="titleBrief">历时16天，共计1000多位盘粉报名。经过研发评委会的终极评选，无处不在中国风·盘子女人坊，古装旅拍模特征集大赛</p>
+										</div>
+									</li>-->
+									<!--<!-- 2 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">23/11</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">涨姿势 | 这些藏在《贤后赋》里的大讲究，懂的人不多。</h3>
+											<p class="titleBrief">自从年度巨献《贤后赋》推出之后，一直有很多盘粉给它打电话，更有盘粉留言表示从朝珠和耳坠上就能看出很考究</p>
+										</div>
+									</li>-->
+									<!-- 3 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">18/11</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">客户建议 | 我们期盼着您的掌声，更渴望您的建议与心声。</h3>
+											<p class="titleBrief">十四载风云巨变，盘子女人坊已由一间小小的摄影工作室，发展成一家拥有北京、上海等40余家直营旗舰店</p>
+										</div>
+									</li>-->
+									<!--<!-- 4 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">26/09</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">美人计 | 不止有酒，更有故事的思美人。</h3>
+											<p class="titleBrief"> 生命里的每一次遇见都是缘分，无论是惊喜的不期而遇，还是不经意的萍水相逢，都会让平淡的生活变得更加精彩，而今天的美人计主角思思和盘子的遇见，则是开始于：听说</p>
+										</div>
+									</li>-->
+									<!-- 5 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">11/08</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">从志怪古籍《山海经》中汲取灵感，重现绝迹的奇异怪兽。</h3>
+											<p class="titleBrief">能想象一种怪兽并把它画成800多种形象的中国人，绝对不乏想象力。倘若要论集中国古人想象力巅峰的文学作品，《山海经》这本上古时期最奇幻瑰丽的“千古第一奇书”，绝对无法避过。</p>
+										</div>
+									</li>-->
+									<!-- 6 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">11/07</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">盘子技术团队 | 一群为东方美倾注热泪与热血的疯狂匠人</h3>
+											<p class="titleBrief">每一次推出客片之后，小盘都会收到很多盘粉的留言：“喜欢汉宫曲，翩若惊鸿，赞”“故梦的客片好有韵味”“不入梨园和紫竹林都好美”......今天，小盘只想把这些赞美与夸奖送给一群为东方美倾注热泪与热血的疯狂匠人。</p>
+										</div>
+									</li>-->
+								</ul>
+								<ul id="titleNews">
+									<!-- 1 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">25/12</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">年终盛典 | 2017最后一次优惠，你怎能错过！</h3>
+											<p class="titleBrief">盘子女人坊年终盛典回馈来了，2017最后一次优惠</p>
+										</div>
+									</li>-->
+									<!-- 2 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">07/12</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">12·12 | 双十二狂欢不止，限时秒杀送惊喜！</h3>
+											<p class="titleBrief">盘子女人坊·1212狂欢不止，致我们遇见古装的美好。</p>
+										</div>
+									</li>-->
+									<!-- 3 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">10/11</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">11·11秒杀倒计时  想要快人一步，看完这篇再抢不迟！</h3>
+											<p class="titleBrief">盘子女人坊11·11古装狂欢节，秒杀活动即将开始。参与即有机会获得盘子女人坊首次限量发行的</p>
+										</div>
+									</li>-->
+									<!-- 4 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">01/11</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">11·11古装狂欢节 | 盘子女人坊年度钜惠，只为美色当道。</h3>
+											<p class="titleBrief">盘子女人坊·美色当道,邀你玩「转」11·11古装狂欢节</p>
+										</div>
+									</li>-->
+									<!-- 5 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">18/09</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">错过了TA，你就和国庆中秋【双重福利】擦肩而过了！</h3>
+											<p class="titleBrief"></p>
+										</div>
+									</li>-->
+									<!-- 6 -->
+									<!--<li>
+										<div class="titleTime">
+											<p class="titleDate">03/07</p>
+											<p class="titleYear">2017</p>
+										</div>
+										<div class="titleWire"></div>
+										<div class="titleText">
+											<h3 class="ellipsis">素人计划 | 试镜名单新鲜出炉，你入围了吗？</h3>
+											<p class="titleBrief">亲爱的盘粉们，今天小盘要公布【素人计划】样片模特试镜名单了，此次【素人计划】入围盘粉，5名由盘子女人坊官方评委会评选产生，5名由公众投票产生，恭喜以下盘粉成功入围。</p>
+										</div>
+									</li>-->
+								</ul>
+							</div>
+						</div>
+						<div class="listRight col-xs-12 col-sm-12 col-lg-6">
+							<div class="videoTop">
+								<h4>视频站</h4>
+							</div>
+							<ul class="videoBottom">
+								<li>
+									<div class="video">
+										<embed src="http://cloud.video.taobao.com//play/u/3170105444/p/2/e/1/t/1/50057300738.swf" quality="high" width="480" height="400" align="middle" allowscriptaccess="never" allowfullscreen="true" type="application/x-shockwave-flash">
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 尾部 -->
+		<div class="footerBg">
+			<div class="footer">
+				<div class="footerTop">
+					<div class="footerTopLeft">
+						<img src="../source/images/footerLogo.png"/>
+						<p>地址:上海市黄浦区蒙自路207号9号楼
+							<span>全国统一服务热线:400-9011-888</span>
+						</p>
+					</div>
+					<div class="footerTopRight">
+						<div>
+							<span>上海运营中心：上海凤绫文化传播有限公司</span>
+							<span>ICP备案号：沪ICP备13045635号-1</span>
+						</div>
+						<div>
+							<span>本站所有图片版权归盘子女人坊文化科技有限公司所有，严禁盗用！盗用必究！</span>
+						</div>
+						<a href="">站长统计</a>
+					</div>
+				</div>
+				<div class="footerBottom">
+					<p>温馨提示:<span>客户付款请认准官方账户，勿向个人账户付款</span></p>
+					<p>友情链接：
+						<marquee behavior="scroll" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="1" scrolldelay="1" direction="up" width="60%">
+							<a href="http://www.hunlimao.com " target="_blank">婚纱摄影</a>
+							<a href="http://www.heiguang.com/photo/" target="_blank">人像摄影</a>
+							<a href="http://news.wbiao.cn/" target="_blank">手表品牌排行榜</a>
+							<a href="http://www.bz55.com/bz55" target="_blank">电脑桌面壁纸</a>
+							<a href="http://www.2046sheying.com/" target="_blank">婚纱摄影</a>
+							<a href="http://www.lyy99.com/" target="_blank">三亚婚纱摄影</a>
+							<a href="http://hr.7192.com" target="_blank">影楼人才网</a>
+							<a href="http://www.deyetown.com/" target="_blank">成都婚纱摄影</a>
+							<a href="http://www.musestudio.net/" target="_blank">上海婚纱摄影</a>
+							<a href="http://www.timi.net.cn/" target="_blank">三亚婚纱摄影哪家好</a>
+							<a href="http://www.sofeiya.net/" target="_blank">三亚婚纱照</a>
+							<a href="http://www.huahaige.com/" target="_blank">婚庆公司</a>
+							<a href="http://www.sanyachloe.com/" target="_blank">三亚婚纱摄影</a>
+							<a href="http://zs.efu.com.cn/" target="_blank">服装加盟</a>
+							<a href="http://www.symuge.com/" target="_blank">三亚婚纱摄影</a>
+							<a href="http://www.v2.net.cn/" target="_blank">成都婚纱摄影</a>
+							<a href="http://www.hmdays.com/" target="_blank">海外婚礼</a>
+							<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=3592686331&amp;site=qq&amp;menu=yes" target="_blank">友情链接QQ3592686331</a>
+						</marquee>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- 左侧 -->
+		<div class="sideLeft">
+			<a href="" class="sideItem side-weixin">
+				<span class="sideLayer"></span>
+			</a>
+			<a href="" class="sideItem side-feedback"></a>
+			<a href="" class="sideItem side-app"></a>
+			<a href="" class="sideItem side-top"></a>
+		</div>
+	</body>
+
+	<script src="../public/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../public/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../public/Swiper/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/panziStyle.js"></script>
+
+</html>

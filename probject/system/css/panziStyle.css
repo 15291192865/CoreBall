@@ -1,0 +1,37 @@
+
+.navbar{
+	background: none;
+	border: none;
+}
+.navbar-header a{
+	margin: 0 !important;
+	padding: 0;
+	float: none;
+}
+.navbar-brand img{
+	width: 57px;
+	height: 53px;
+}
+.nav{
+	padding-left: 20px;
+}
+.nav a{
+	background: none !important;
+}
+.manager div {
+	display: none;
+}
+.manager .on {
+	display: block;
+}
+.table {
+	text-align: center;
+}
+
+.table th {
+	text-align: center;
+}
+
+.manager .table td {
+	vertical-align: middle;
+}

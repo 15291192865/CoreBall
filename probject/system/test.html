@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<title>后台测试页面</title>
+		<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css" />
+		<style type="text/css">
+			.manager>div {
+				/*height: 600px;*/
+				display: none;
+			}
+			.manager .on {
+				display: block;
+			}
+			.table {
+				text-align: center;
+			}
+			.table th {
+				text-align: center;
+			}
+			.manager .table td {
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+				            <span class="sr-only">切换导航</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				        </button>
+						<a class="navbar-brand" href="#">蓝鸥科技</a>
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#">后台管理系统</a>
+							</li>
+							<li>
+								<a href="#">SVN</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									Java <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">jmeter</a>
+									</li>
+									<li>
+										<a href="#">EJB</a>
+									</li>
+									<li>
+										<a href="#">Jasper Report</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="#">分离的链接</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="#">另一个分离的链接</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="row">
+				<!-- 菜单栏 -->
+				<div class="col-xs-12 col-sm-3 manager-btn">
+					<button class="btn btn-success btn-danger btn-block" data-class="goodManager">商品管理</button>
+					<button class="btn btn-success btn-block" data-class="userManager">用户管理</button>
+					<button class="btn btn-success btn-block" data-class="actManager">活动管理</button>
+				</div>
+				<!-- 内容展示 -->
+				<div class="col-xs-12 col-sm-9 manager">
+					<!-- 商品管理 -->
+					<div class="goodManager on table-responsive">
+						<table class="table table-striped table-bordered">
+							<tr>
+								<th>名称</th>
+								<th>展示</th>
+								<th>描述</th>
+								<th>价格</th>
+								<th>操作</th>
+							</tr>
+							<!--<tr>
+								<td>百丽</td>
+								<td><img style="width: 100px;" src="../source/img/1.png"/></td>
+								<td>阿克江分类可</td>
+								<td>看的反馈老实交代</td>
+								<td>
+									<button class="btn btn-info">修改</button>
+									<button class="btn btn-warning">删除</button>
+								</td>
+							</tr>-->
+						</table>
+						<!-- 添加商品按钮 -->
+						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal"> 添加商品</button>
+					</div>
+					<!-- 用户管理 -->
+					<div class="userManager">用户</div>
+					<!-- 活动管理 -->
+					<div class="actManager">活动</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">添加商品</h4>
+					</div>
+					<div class="modal-body">
+						<!-- 表单内容 -->
+						<form>
+							<div class="from-group">
+								<label>名称:</label>
+								<input type="text" id="gname" class="form-control" />
+								<label>描述：</label>
+								<input type="text" id="gdesc" class="form-control" />
+								<label>价格：</label>
+								<input type="text" id="gprice" class="form-control" />
+								<label>图片：</label>
+								<input type="text" id="gimg" class="form-control" />
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary" id="subGood" data-dismiss="modal">添加</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../public/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../public/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		// 侧边栏绑定点击事件
+		$('.manager-btn .btn').click(function() {
+			// 改变按钮自身的颜色变化
+			$('.manager-btn .btn').removeClass('btn-danger');
+			$(this).addClass('btn-danger');
+
+			// 获取data-class
+			var divClass = $(this).attr('data-class');
+			$('.manager>div').hide();
+			$('.' + divClass).show();
+		});
+
+		// 展示列表
+		var goodString = localStorage.getItem('productsList'); // 取数据
+		var goodArr = eval('(' + goodString + ')'); // 转数组
+//		console.log(goodArr);
+		$.each(goodArr, function(i, item) {
+			// 创建新列表
+			var newObj = $('<tr><td>' + item.name + '</td><td><img style="width: 100px;" src="' + item.imgurl + '"/></td><td>' + item.intro + '</td><td>' + item.price + '</td><td><button class="btn btn-info">修改</button><button class="btn btn-warning" onclick="delGood(this)" data-id="'+ i +'">删除</button></td></tr>');
+			// 将新的对象添加到商品展示表格中
+			$('.goodManager table').append(newObj);
+		});
+		
+		// 提交按钮的点击事件（添加商品）
+		$('#subGood').click(function() {
+			// 获取新信息(押队信息做过滤：正则)
+			var g_name = $('#gname').val(); // 名称
+			var g_intro = $('#gdesc').val(); // 介绍
+			var g_price = $('#gprice').val(); // 价格
+			var g_imgurl = $('#gimg').val(); // 图片路径
+			console.log(g_name,g_intro,g_price,g_imgurl);
+			// 将获取的信息组装成一条商品信息（一个对象）
+			var newGoodObj = {
+				imgurl:g_imgurl,
+				intro:g_intro,
+				name:g_name,
+				price:g_price
+			};
+			goodArr.push(newGoodObj); // 添加信息
+			// 将goodArr转化成字符串，更新到localStorage
+			var newString = JSON.stringify(goodArr);
+			localStorage.setItem('productsList',newString);
+			
+			// 刷新页面
+			history.go(0);
+		});
+		function delGood(a) {
+			// a: 点击的删除按钮
+			// 获取删除的这条信息在goodArr中的位置
+			var index = $(a).attr('data-id');
+			// 从数组中删除当前信息
+			goodArr.splice(index,1);
+			// 将goodArr转换成字符串
+			var newString = JSON.stringify(goodArr);
+			localStorage.setItem('productsList',newString);
+			
+			// 刷新页面
+			history.go(0);
+		}
+	</script>
+
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<title>测试页面</title>
+		<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css" />
+		<style type="text/css">
+			.row>div>img{
+				width: 100%;
+				background: #eee;
+				border-radius: 20px;
+			}
+			.row>div>p:nth-of-type(1){
+				font-size: 17px;
+				color: #444;
+				font-weight: bolder;
+				padding-top: 10px;
+			}
+			.row>div>p:nth-of-type(2){
+				color: #666;
+				font-size: 13px;
+			}
+			.row>div>div{
+				border-top: 1px dashed #B0986F;
+				margin-bottom: 10px;
+			}
+			.row>div>mark{
+				color: #B0986F;
+				background: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<!--<div class="col-xs-12 col-sm-6 col-md-3">
+					<img src="../source/img/1.png"/>
+					<p>百利甜情人</p>
+					<p>爱尔兰百利甜酒，新西兰奶油</p>
+					<div></div>
+					<mark>￥198.00/2.0磅</mark>
+				</div>-->
+			</div>
+		</div>
+	</body>
+	<script src="../public/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../public/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		// 取出数据
+		var goodString = localStorage.getItem('productsList');
+//		console.log(goodString);
+		// 将json格式的字符串转换成可以用来操作的数据格式（数组或对象）
+		var goodList = eval('('+ goodString +')');
+//		console.log(goodList);
+		$.each(goodList,function(i,item) {
+			var newObj = $('<div class="munber col-xs-12 col-sm-6 col-md-3"><img src="'+ item.imgurl +'"/><p>'+ item.name +'</p><p>'+ item.intro +'</p><div></div><mark>'+ item.price +'</mark></div>');
+			$('.row').append(newObj);
+		});
+		
+//		function addEvent(obj,xEvent,fn) {
+//			if(obj.attachEvent) {
+//				obj.attachEvent('on'+xEvent,fn);
+//			} else {
+//				obj.addEventListener(xEvent,fn,false);
+//			}
+//		}
+//		
+//		window.onload = function() {
+//			addEvent($('.row')[0],'mousewheel',onMouseWheel);
+//			addEvent($('.row')[0],'DOMMouseScroll',onMouseWheel);
+//			function onMouseWheel() {
+//				alert(1);
+//			}
+//		}
+	</script>
+</html>

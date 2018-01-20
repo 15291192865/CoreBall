@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<title>盘子女人坊-管理员界面</title>
+		<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../public/SweetAlert/dist/sweetalert2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/panziStyle.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+				            <span class="sr-only">切换导航</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				        </button>
+						<a class="navbar-brand" href="#">
+							<img src="../source/images/logo.png" />
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#">后台管理系统</a>
+							</li>
+							<!--<li>
+								<a href="#">系统通知</a>
+							</li><-->
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="row">
+				<!-- 菜单栏 -->
+				<div class="col-xs-12 col-sm-3 manager-btn">
+					<button class="btn btn-success btn-danger btn-block" data-class="swiperManager">轮播图</button>
+					<button class="btn btn-success btn-block" data-class="wrap1LeftManager">热拍主题(左)</button>
+					<button class="btn btn-success btn-block" data-class="wrap1RightManager">热拍主题(右)</button>
+					<button class="btn btn-success btn-block" data-class="wrap2Manager">最美客片</button>
+					<button class="btn btn-success btn-block" data-class="wrap3Manager">特色专题</button>
+					<button class="btn btn-success btn-block" data-class="wrap4Manager">品牌中心</button>
+					<button class="btn btn-success btn-block" data-class="wrap5Manager">客户评论</button>
+					<button class="btn btn-success btn-block" data-class="wrap6OneManager">资讯动态(1)</button>
+					<button class="btn btn-success btn-block" data-class="wrap6TwoManager">资讯动态(2)</button>
+					<button class="btn btn-success btn-block" data-class="wrap6ThreeManager">资讯动态(3)</button>
+				</div>
+				<!-- 内容展示 -->
+				<div class="col-xs-12 col-sm-9 manager">
+					<!-- 轮播图 -->
+					<div class="swiperManager on table-responsive">
+						<table class="table table-striped table-bordered">
+							<tr>
+								<th>展示</th>
+								<th>操作</th>
+							</tr>
+							<!--<tr>
+								<td><img style="width: 100px;" src="../source/images/7f08caf27b26d1defe4e392cdcdd8562.jpg"/></td>
+								<td>
+									<button class="btn btn-info">修改</button>
+									<button class="btn btn-warning">删除</button>
+								</td>
+							</tr>-->
+						</table>
+						<!-- 添加商品按钮 -->
+						<button class="btn btn-primary" data-toggle="modal" data-target="#OneModal"> 添加商品</button>
+					</div>
+					<!-- 热拍主题 -->
+					<!-- 左边 -->
+					<div class="wrap1LeftManager table-responsive">
+						<table class="table table-striped table-bordered">
+							<tr>
+								<th>展示</th>
+								<th>操作</th>
+							</tr>
+							<!--<tr>
+								<td><img style="width: 100px;" src="../source/images/7f08caf27b26d1defe4e392cdcdd8562.jpg"/></td>
+								<td>
+									<button class="btn btn-info">修改</button>
+									<button class="btn btn-warning">删除</button>
+								</td>
+							</tr>-->
+						</table>
+						<!-- 添加商品按钮 -->
+						<button class="btn btn-primary" data-toggle="modal" data-target="#TwoModal"> 添加商品</button>
+					</div>
+					<!-- 右边 -->
+					<div class="wrap1RightManager table-responsive">
+						<table class="table table-striped table-bordered">
+							<tr>
+								<th>展示</th>
+								<th>操作</th>
+							</tr>
+							<!--<tr>
+								<td><img style="width: 100px;" src="../source/images/7f08caf27b26d1defe4e392cdcdd8562.jpg"/></td>
+								<td>
+									<button class="btn btn-info">修改</button>
+									<button class="btn btn-warning">删除</button>
+								</td>
+							</tr>-->
+						</table>
+						<!-- 添加商品按钮 -->
+						<button class="btn btn-primary" data-toggle="modal" data-target="#ThreeModal"> 添加商品</button>
+					</div>
+					<!-- 最美客片 -->
+					<div class="wrap2Manager table-responsive">
+						<table class="table table-striped table-bordered">
+							<tr>
+								<th>展示</th>
+								<th>操作</th>
+							</tr>
+							<!--<tr>
+								<td><img style="width: 100px;" src="../source/images/7f08caf27b26d1defe4e392cdcdd8562.jpg"/></td>
+								<td>
+									<button class="btn btn-info">修改</button>
+									<button class="btn btn-warning">删除</button>
+								</td>
+							</tr>-->
+						</table>
+						<!-- 添加商品按钮 -->
+						<button class="btn btn-primary" data-toggle="modal" data-target="#FourModal"> 添加商品</button>
+					</div>
+					<!-- 特色专题 -->
+					<div class="wrap3Manager table-responsive">
+						<table class="table table-striped table-bordered">
+							<tr>
+								<th>展示</th>
+								<th>标题</th>
+								<th>操作</th>
+							</tr>
+							<!--<tr>
+								<td><img style="width: 100px;" src="../source/images/7f08caf27b26d1defe4e392cdcdd8562.jpg"/></td>
+								<td>特色专题(新品主题)</td>
+								<td>
+									<button class="btn btn-info">修改</button>
+									<button class="btn btn-warning">删除</button>
+								</td>
+							</tr>-->
+						</table>
+						<!-- 添加商品按钮 -->
+						<button class="btn btn-primary" data-toggle="modal" data-target="#FiveModal"> 添加商品</button>
+					</div>
+					<!-- 品牌中心 -->
+					<div class="wrap4Manager table-responsive">
+						<table class="table table-striped table-bordered">
+							<tr>
+								<th>展示</th>
+								<th>标题</th>
+								<th>操作</th>
+							</tr>
+							<!--<tr>
+								<td><img style="width: 100px;" src="../source/images/7f08caf27b26d1defe4e392cdcdd8562.jpg"/></td>
+								<td>特色专题(新品主题)</td>
+								<td>
+									<button class="btn btn-info">修改</button>
+									<button class="btn btn-warning">删除</button>
+								</td>
+							</tr>-->
+						</table>
+						<!-- 添加商品按钮 -->
+						<button class="btn btn-primary" data-toggle="modal" data-target="#SixModal"> 添加商品</button>
+					</div>
+					<!-- 客户评论 -->
+					<div class="wrap5Manager table-responsive">
+						<table class="table table-striped table-bordered">
+							<tr>
+								<th>内容</th>
+								<th>展示</th>
+								<th>昵称</th>
+								<th>操作</th>
+							</tr>
+							<!--<tr>
+								<td>成片已出[哈哈]开心到爆炸[二哈]@盘子女人坊摄影沈阳店</td>
+								<td><img style="width: 100px;" src="../source/images/7f08caf27b26d1defe4e392cdcdd8562.jpg"/></td>
+								<td>鎏家大岳岳</td>
+								<td>
+									<button class="btn btn-info">修改</button>
+									<button class="btn btn-warning">删除</button>
+								</td>
+							</tr>-->
+						</table>
+						<!-- 添加商品按钮 -->
+						<button class="btn btn-primary" data-toggle="modal" data-target="#SevenModal"> 添加商品</button>
+					</div>
+					<!-- 资讯动态 -->
+					<!-- 1 -->
+					<div class="wrap6OneManager table-responsive">
+						<table class="table table-striped table-bordered">
+							<tr>
+								<th>时间</th>
+								<th>年份</th>
+								<th>标题</th>
+								<th>内容</th>
+								<th>操作</th>
+							</tr>
+							<!--<tr>
+								<td>25/12</td>
+								<td>2017</td>
+								<td>福利 | 2018集团年会重磅神秘大礼，将属于陪伴我们十五载的盘粉。</td>
+								<td>十四载风云巨变，盘子女人坊。已由一间小小的摄影工作室，发展成一家拥有北京、上海等40余家直营旗舰店，布局全国千百城的文化产业集团</td>
+								<td>
+									<button class="btn btn-info">修改</button>
+									<button class="btn btn-warning">删除</button>
+								</td>
+							</tr>-->
+						</table>
+						<!-- 添加商品按钮 -->
+						<button class="btn btn-primary" data-toggle="modal" data-target="#EightModal"> 添加商品</button>
+					</div>
+					<!-- 2 -->
+					<div class="wrap6TwoManager table-responsive">
+						<table class="table table-striped table-bordered">
+							<tr>
+								<th>时间</th>
+								<th>年份</th>
+								<th>标题</th>
+								<th>内容</th>
+								<th>操作</th>
+							</tr>
+							<!--<tr>
+								<td><img style="width: 100px;" src="../source/images/7f08caf27b26d1defe4e392cdcdd8562.jpg"/></td>
+								<td>
+									<button class="btn btn-info">修改</button>
+									<button class="btn btn-warning">删除</button>
+								</td>
+							</tr>-->
+						</table>
+						<!-- 添加商品按钮 -->
+						<button class="btn btn-primary" data-toggle="modal" data-target="#NineModal"> 添加商品</button>
+					</div>
+					<!-- 3 -->
+					<div class="wrap6ThreeManager table-responsive">
+						<table class="table table-striped table-bordered">
+							<tr>
+								<th>时间</th>
+								<th>年份</th>
+								<th>标题</th>
+								<th>内容</th>
+								<th>操作</th>
+							</tr>
+							<!--<tr>
+								<td><img style="width: 100px;" src="../source/images/7f08caf27b26d1defe4e392cdcdd8562.jpg"/></td>
+								<td>
+									<button class="btn btn-info">修改</button>
+									<button class="btn btn-warning">删除</button>
+								</td>
+							</tr>-->
+						</table>
+						<!-- 添加商品按钮 -->
+						<button class="btn btn-primary" data-toggle="modal" data-target="#TenModal"> 添加商品</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--修改模态框-->
+		<div>
+			<!-- 模态框（Modal）1 -->
+			<div class="modal fade" id="oneModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>图片：</label>
+									<input type="text" id="modswimg" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="refSwiper" data-dismiss="modal">提交</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）2 -->
+			<div class="modal fade" id="twoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>图片：</label>
+									<input type="text" id="modolimg" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="refOneLeft" data-dismiss="modal">提交</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）3 -->
+			<div class="modal fade" id="threeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>图片：</label>
+									<input type="text" id="modorimg" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="refOneRight" data-dismiss="modal">提交</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）4 -->
+			<div class="modal fade" id="fourModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>图片：</label>
+									<input type="text" id="modtimg" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="refTwo" data-dismiss="modal">提交</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）5 -->
+			<div class="modal fade" id="fiveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>图片：</label>
+									<input type="text" id="modgimg" class="form-control" />
+									<label>标题：</label>
+									<input type="text" id="modgname" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="refThree" data-dismiss="modal">提交</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）6 -->
+			<div class="modal fade" id="sixModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>图片：</label>
+									<input type="text" id="modfimg" class="form-control" />
+									<label>标题：</label>
+									<input type="text" id="modfname" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="refFour" data-dismiss="modal">提交</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）7 -->
+			<div class="modal fade" id="sevenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>标题：</label>
+									<input type="text" id="modfititle" class="form-control" />
+									<label>图片：</label>
+									<input type="text" id="modfiimg" class="form-control" />
+									<label>昵称：</label>
+									<input type="text" id="modfiname" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="refFive" data-dismiss="modal">提交</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）8 -->
+			<div class="modal fade" id="eightModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>时间：</label>
+									<input type="text" id="modsotime" class="form-control" />
+									<label>年份：</label>
+									<input type="text" id="modsoyear" class="form-control" />
+									<label>标题：</label>
+									<input type="text" id="modsotitle" class="form-control" />
+									<label>内容：</label>
+									<input type="text" id="modsocontent" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="refSixOne" data-dismiss="modal">提交</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）9 -->
+			<div class="modal fade" id="nineModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>时间：</label>
+									<input type="text" id="modsttime" class="form-control" />
+									<label>年份：</label>
+									<input type="text" id="modstyear" class="form-control" />
+									<label>标题：</label>
+									<input type="text" id="modsttitle" class="form-control" />
+									<label>内容：</label>
+									<input type="text" id="modstcontent" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="refSixTwo" data-dismiss="modal">提交</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）10 -->
+			<div class="modal fade" id="tenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>时间：</label>
+									<input type="text" id="modstrtime" class="form-control" />
+									<label>年份：</label>
+									<input type="text" id="modstryear" class="form-control" />
+									<label>标题：</label>
+									<input type="text" id="modstrtitle" class="form-control" />
+									<label>内容：</label>
+									<input type="text" id="modstrcontent" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="refSixThree" data-dismiss="modal">提交</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--添加模态框-->
+		<div>
+			<!-- 模态框（Modal）1 -->
+			<div class="modal fade" id="OneModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">添加商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>图片：</label>
+									<input type="text" id="swimg" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="subSwiper" data-dismiss="modal">添加</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）2 -->
+			<div class="modal fade" id="TwoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">添加商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>图片：</label>
+									<input type="text" id="olimg" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="subOneLeft" data-dismiss="modal">添加</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）3 -->
+			<div class="modal fade" id="ThreeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">添加商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>图片：</label>
+									<input type="text" id="orimg" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="subOneRight" data-dismiss="modal">添加</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）4 -->
+			<div class="modal fade" id="FourModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">添加商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>图片：</label>
+									<input type="text" id="timg" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="subTwo" data-dismiss="modal">添加</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）5 -->
+			<div class="modal fade" id="FiveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">添加商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>图片：</label>
+									<input type="text" id="gimg" class="form-control" />
+									<label>标题：</label>
+									<input type="text" id="gname" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="subThree" data-dismiss="modal">添加</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）6 -->
+			<div class="modal fade" id="SixModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">添加商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>图片：</label>
+									<input type="text" id="fimg" class="form-control" />
+									<label>标题：</label>
+									<input type="text" id="fname" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="subFour" data-dismiss="modal">添加</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）7 -->
+			<div class="modal fade" id="SevenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">添加商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>标题：</label>
+									<input type="text" id="fititle" class="form-control" />
+									<label>图片：</label>
+									<input type="text" id="fiimg" class="form-control" />
+									<label>昵称：</label>
+									<input type="text" id="finame" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="subFive" data-dismiss="modal">添加</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）8 -->
+			<div class="modal fade" id="EightModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">添加商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>时间：</label>
+									<input type="text" id="sotime" class="form-control" />
+									<label>年份：</label>
+									<input type="text" id="soyear" class="form-control" />
+									<label>标题：</label>
+									<input type="text" id="sotitle" class="form-control" />
+									<label>内容：</label>
+									<input type="text" id="socontent" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="subSixOne" data-dismiss="modal">添加</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）9 -->
+			<div class="modal fade" id="NineModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">添加商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>时间：</label>
+									<input type="text" id="sttime" class="form-control" />
+									<label>年份：</label>
+									<input type="text" id="styear" class="form-control" />
+									<label>标题：</label>
+									<input type="text" id="sttitle" class="form-control" />
+									<label>内容：</label>
+									<input type="text" id="stcontent" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="subSixTwo" data-dismiss="modal">添加</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 模态框（Modal）10 -->
+			<div class="modal fade" id="TenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">添加商品</h4>
+						</div>
+						<div class="modal-body">
+							<!-- 表单内容 -->
+							<form>
+								<div class="from-group">
+									<label>时间：</label>
+									<input type="text" id="strtime" class="form-control" />
+									<label>年份：</label>
+									<input type="text" id="stryear" class="form-control" />
+									<label>标题：</label>
+									<input type="text" id="strtitle" class="form-control" />
+									<label>内容：</label>
+									<input type="text" id="strcontent" class="form-control" />
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="subSixThree" data-dismiss="modal">添加</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../public/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../public/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../public/SweetAlert/dist/sweetalert2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/panziStyle.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<title>初始数据</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var goodList = [{
+			imgurl:'../source/img/1.png',
+			name:'百利甜情人',
+			intro:'爱尔兰百利甜酒，新西兰奶油',
+			price:'￥198.00/2.0磅'
+		},{
+			imgurl:'../source/img/2.png',
+			name:'芒果奶油蛋糕',
+			intro:'爱尔兰百利甜酒，新西兰奶油',
+			price:'￥198.00/2.0磅'
+		},{
+			imgurl:'../source/img/3.png',
+			name:'卡百利',
+			intro:'爱尔兰百利甜酒，新西兰奶油',
+			price:'￥198.00/2.0磅'
+		},{
+			imgurl:'../source/img/4.png',
+			name:'黑白巧克力慕斯蛋糕',
+			intro:'爱尔兰百利甜酒，新西兰奶油',
+			price:'￥198.00/2.0磅'
+		}]; // json
+		console.log(goodList);
+		// JSON.stringify(object); 将json格式的对象转换成json格式的字符串
+		var goodsString = JSON.stringify(goodList);
+		console.log(goodsString);
+		localStorage.setItem('productsList',goodsString);
+	</script>
+</html>

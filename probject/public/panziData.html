@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<title>盘子女人坊内容初始数据</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		// 轮播图
+		var swiper = [{
+			imgurl:'../source/images/7f08caf27b26d1defe4e392cdcdd8562.jpg'
+		},{
+			imgurl:'../source/images/3132900161aef9d9bc590ef9a031b655.jpg'
+		},{
+			imgurl:'../source/images/f9dbfd96ca08c8525f487d808343011f.jpg'
+		}];
+//		console.log(swiper);
+		var swiperString = JSON.stringify(swiper);
+//		console.log(swiperString);
+		localStorage.setItem('swiperImages',swiperString);
+		
+		// wrap1 内容1
+		var contenOneLeft = [{
+			imgurl:'../source/images/c30145f2a225dd8b47847a4267cc77c5.jpg'
+		}];
+//		console.log(contenOneLeft);
+		var oneLeft = JSON.stringify(contenOneLeft);
+//		console.log(oneLeft);
+		localStorage.setItem('conOneLeft',oneLeft);
+		// wrap1 内容2
+		var contentOneRight = [{
+			imgurl:'../source/images/16c2d7a90c5fdd2220bfb1ee508f6099.jpg'
+		},{
+			imgurl:'../source/images/85c6e9918d25d090cd71110f37d3c0f1.jpg'
+		}];
+//		console.log(contentOneRight);
+		var oneRight = JSON.stringify(contentOneRight);
+//		console.log(oneRight);
+		localStorage.setItem('conOneRight',oneRight);
+		
+		// wrap2 内容
+		var contentTwo = [{
+			imgurl:'../source/images/014140f7f5ac986d585ca2b34cd7832b.jpg'
+		},{
+			imgurl:'../source/images/cab8cf77695078ff94bc30c7bae7fa6f.jpg'
+		},{
+			imgurl:'../source/images/d84714ddc6bbf99d43d573cb6f1027c9.jpg'
+		},{
+			imgurl:'../source/images/571e6ed11c2df43b38861b1363dccc08.jpg'
+		},{
+			imgurl:'../source/images/531c649be98961e64d93b36c01181d0e.jpg'
+		},{
+			imgurl:'../source/images/cba3b71849c6cb6dc3a336b4a07546bf.jpg'
+		},{
+			imgurl:'../source/images/f2d932a4842408c5c1afb32247827f51.jpg'
+		},{
+			imgurl:'../source/images/e5a379f3dcc413a997ae7745e2e58920.jpg'
+		}];
+//		console.log(contentTwo);
+		var twoAll = JSON.stringify(contentTwo);
+//		console.log(twoAll);
+		localStorage.setItem('contentTwoAll',twoAll);
+		
+		// wrap3 内容
+		var contentThree = [{
+			imgurl:'../source/images/0f90bc92a6956c0ad5bdf76099197d68.jpg',
+			name:'特色专题(新品主题)'
+		},{
+			imgurl:'../source/images/a05a6c941141f50191383c532d523c10.jpg',
+			name:'特色专题(外景主题)'
+		},{
+			imgurl:'../source/images/85e2ef672d9085d92aa5bfbf71b0ba8c.jpg',
+			name:'特色专题(闺蜜主题)'
+		},{
+			imgurl:'../source/images/4cda7a422057c60de17904cadf17587b.jpg',
+			name:'特色专题(情侣主题)'
+		}];
+//		console.log(contentThree);
+		var threeAll = JSON.stringify(contentThree);
+//		console.log(threeAll);
+		localStorage.setItem('contentThreeAll',threeAll);
+		
+		// wrap4 内容
+		var contentFour = [{
+			imgurl:'../source/images/c7cbf4c2974f403c6f708af71ac3df2f.jpg',
+			name:'集团品牌介绍'
+		},{
+			imgurl:'../source/images/2086ddc443b313e178463241aa8b3235.jpg',
+			name:'集团技术团队'
+		},{
+			imgurl:'../source/images/ba6874972eddb0ac75554e5dde9e5a41.jpg',
+			name:'集团电商团队'
+		},{
+			imgurl:'../source/images/9bc5db393ab01a1927dffc2516ea43f8.jpg',
+			name:'集团后期工程'
+		}];
+//		console.log(contentFour);
+		var fourAll = JSON.stringify(contentFour);
+//		console.log(fourAll);
+		localStorage.setItem('contentFourAll',fourAll);
+		
+		// wrap5 内容
+		var contentFive = [{
+			title:'成片已出[哈哈]开心到爆炸[二哈]@盘子女人坊摄影沈阳店',
+			imgurl:'../source/images/2b2949051b16ca5f9f9174282add8857.jpg',
+			name:'鎏家大岳岳'
+		},{
+			title:'@化妆师卢蓉 @盘子女人坊摄影 @古风摄影师任兴旺 [并不简单]谁还不是小仙女啊，感谢盘子女人坊，感谢逗中带点萌萌哒的化妆师卢蓉, 温柔摄影师任兴旺，对，就是温柔[笑cry][笑cry]娘娘贵妃小主格格戏曲主题，想怎么拍就怎么拍，你值得拥有[小黄人剪刀手]',
+			imgurl:'../source/images/b81cf077f4cda7ceaf2b1e8401899cd1.jpg',
+			name:'Cheeseyeah'
+		},{
+			title:'盘子，我终于可以发出来了@盘子女人坊摄影 ​​​​ ​',
+			imgurl:'../source/images/c43fd3a6b2acccd8f7390d3a809f82c9.jpg',
+			name:'云茜ccc'
+		},{
+			title:'@期待好久的古装拍摄 今天终于等到了 早晨6点多就和 妹妹起床出发来到了 盘子女人坊 一进盘子女人坊被大厅的高端大气上档次深深吸引了 心情瞬间美丽起来 进来遇见一位美丽的礼服师 很会搭配 很满意 对了还有非常帅的化妆师 简直男神 非常满意的一次拍摄 @盘子女人坊摄影 @化妆师孟阳 @摄影师戴海波',
+			imgurl:'../source/images/b1f820302cb5464a4d959c6fb580b9fc.jpg',
+			name:'梁淞婷'
+		}];
+//		console.log(contentFive);
+		var fiveAll = JSON.stringify(contentFive);
+//		console.log(fiveAll);
+		localStorage.setItem('contentFiveAll',fiveAll);
+		
+		// wrap6 内容1
+		var contentSix_one = [{
+			time:'25/12',
+			year:'2017',
+			title:'福利 | 2018集团年会重磅神秘大礼，将属于陪伴我们十五载的盘粉。',
+			content:'十四载风云巨变，盘子女人坊。已由一间小小的摄影工作室，发展成一家拥有北京、上海等40余家直营旗舰店，布局全国千百城的文化产业集团'
+		},{
+			time:'12/12',
+			year:'2017',
+			title:'加盟商“移花接木”被罚23万，盘子女人坊打赢“知识产权保卫战”。',
+			content:' 近日《长沙晚报》发布了一则《加盟商“移花接木”被罚23万》的新闻，报道称“驳回被申请人的全部反请求，加盟商吴恒须赔偿湖南盘子女人坊文化科技有限公司利益损失共计232322元……”，引发社会各界的持续关注。'
+		},{
+			time:'11/12',
+			year:'2017',
+			title:'12·12秒杀倒计时 | 你和超低套系的距离，只差最后60分钟！',
+			content:' 致我们狂欢不止的12·12，超低套系，限量好礼，等你秒杀、秒杀、秒杀'
+		},{
+			time:'09/11',
+			year:'2017',
+			title:'万千宠爱于一身，《惹红尘》主题周边首次限量发行。',
+			content:' 欣赏完昨日发布的新品，《贤后赋》和《雾透纱》后，大家是不是还有些意犹未尽，盘子女人坊每年都会研发一批'
+		},{
+			time:'18/10',
+			year:'2017',
+			title:'势如破竹，盘子女人坊再掀维权打假风暴。',
+			content:' 近一年来，盘子女人坊集团法律团队通过深入调查、取证，在全国范围内进行了商标、摄影主题维权，前后共立案大小数十起，起诉金额达数百万元，至今无一败诉，势如破竹，现已结案的，涉案人员就支付了一百多万元赔偿款。'
+		},{
+			time:'18/10',
+			year:'2017',
+			title:'关于“广州市海珠区乐峰广场盘子女人坊加盟店”声明',
+			content:' 亲爱的消费者朋友、盘子女人坊合作伙伴、盘子女人坊体系员工：  一、位于广州市海珠区都会路2号乐峰广场的盘子女人坊古装摄影加盟店'
+		}];
+//		console.log(contentSix_one);
+		var sixOne = JSON.stringify(contentSix_one);
+//		console.log(sixOne);
+		localStorage.setItem('contentSixOne',sixOne);
+		
+		// wrap6 内容2
+		var contentSix_two = [{
+			time:'25/12',
+			year:'2017',
+			title:'古装旅拍模特征集大赛完美落幕，报名的美人们看这里！',
+			content:'历时16天，共计1000多位盘粉报名。经过研发评委会的终极评选，无处不在中国风·盘子女人坊，古装旅拍模特征集大赛'
+		},{
+			time:'23/11',
+			year:'2017',
+			title:'涨姿势 | 这些藏在《贤后赋》里的大讲究，懂的人不多。',
+			content:'自从年度巨献《贤后赋》推出之后，一直有很多盘粉给它打电话，更有盘粉留言表示从朝珠和耳坠上就能看出很考究'
+		},{
+			time:'18/11',
+			year:'2017',
+			title:'客户建议 | 我们期盼着您的掌声，更渴望您的建议与心声。',
+			content:'十四载风云巨变，盘子女人坊已由一间小小的摄影工作室，发展成一家拥有北京、上海等40余家直营旗舰店'
+		},{
+			time:'26/09',
+			year:'2017',
+			title:'美人计 | 不止有酒，更有故事的思美人。',
+			content:' 生命里的每一次遇见都是缘分，无论是惊喜的不期而遇，还是不经意的萍水相逢，都会让平淡的生活变得更加精彩，而今天的美人计主角思思和盘子的遇见，则是开始于：听说'
+		},{
+			time:'11/08',
+			year:'2017',
+			title:'从志怪古籍《山海经》中汲取灵感，重现绝迹的奇异怪兽。',
+			content:'能想象一种怪兽并把它画成800多种形象的中国人，绝对不乏想象力。倘若要论集中国古人想象力巅峰的文学作品，《山海经》这本上古时期最奇幻瑰丽的“千古第一奇书”，绝对无法避过。'
+		},{
+			time:'11/07',
+			year:'2017',
+			title:'盘子技术团队 | 一群为东方美倾注热泪与热血的疯狂匠人',
+			content:'每一次推出客片之后，小盘都会收到很多盘粉的留言：“喜欢汉宫曲，翩若惊鸿，赞”“故梦的客片好有韵味”“不入梨园和紫竹林都好美”......今天，小盘只想把这些赞美与夸奖送给一群为东方美倾注热泪与热血的疯狂匠人。'
+		}];
+//		console.log(contentSix_two);
+		var sixTwo = JSON.stringify(contentSix_two);
+//		console.log(sixTwo);
+		localStorage.setItem('contentSixTwo',sixTwo);
+		
+		// wrap6 内容3
+		var contentSix_three = [{
+			time:'25/12',
+			year:'2017',
+			title:'年终盛典 | 2017最后一次优惠，你怎能错过！',
+			content:'盘子女人坊年终盛典回馈来了，2017最后一次优惠'
+		},{
+			time:'07/12',
+			year:'2017',
+			title:'12·12 | 双十二狂欢不止，限时秒杀送惊喜！',
+			content:' 盘子女人坊·1212狂欢不止，致我们遇见古装的美好。'
+		},{
+			time:'10/11',
+			year:'2017',
+			title:'11·11秒杀倒计时  想要快人一步，看完这篇再抢不迟！',
+			content:'盘子女人坊11·11古装狂欢节，秒杀活动即将开始。参与即有机会获得盘子女人坊首次限量发行的'
+		},{
+			time:'01/11',
+			year:'2017',
+			title:'11·11古装狂欢节 | 盘子女人坊年度钜惠，只为美色当道。',
+			content:'盘子女人坊·美色当道,邀你玩「转」11·11古装狂欢节'
+		},{
+			time:'18/09',
+			year:'2017',
+			title:'错过了TA，你就和国庆中秋【双重福利】擦肩而过了！',
+			content:''
+		},{
+			time:'03/07',
+			year:'2017',
+			title:'素人计划 | 试镜名单新鲜出炉，你入围了吗？',
+			content:'亲爱的盘粉们，今天小盘要公布【素人计划】样片模特试镜名单了，此次【素人计划】入围盘粉，5名由盘子女人坊官方评委会评选产生，5名由公众投票产生，恭喜以下盘粉成功入围。'
+		}];
+//		console.log(contentSix_three);
+		var sixThree = JSON.stringify(contentSix_three);
+//		console.log(sixThree);
+		localStorage.setItem('contentSixThree',sixThree);
+		
+		var userinfo = [{
+			username: '15291192865',
+			userpasd: 'wj123456'
+		}];
+		var userinfoObj = JSON.stringify(userinfo);
+		localStorage.setItem('userinforw',userinfoObj);
+		
+		var managers = [{
+			name: '15291192865',
+			pasd: '123456wj'
+		}];
+		var managerObj = JSON.stringify(managers);
+		localStorage.setItem('manager',managerObj);
+	</script>
+</html>
